@@ -50,19 +50,28 @@
             <div class="row ">
                 <div class="col col-sm-2">
                     <div class="form-check">
-                        <input class="form-check-input" type="radio" name="searchRadio" value="location"
-                            onclick="displayForm(this);">
-                        <label class="form-check-label" for="flexRadioDefault1">
+                        <input class="form-check-input" type="radio" name="searchRadio" id="locationRadio"
+                            value="location" onclick="displayForm(this);">
+                        <label class="form-check-label" for="locationRadio">
                             By Location
                         </label>
                     </div>
                 </div>
                 <div class="col col-sm-2">
                     <div class="form-check">
-                        <input class="form-check-input" type="radio" name="searchRadio" value="type"
+                        <input class="form-check-input" type="radio" name="searchRadio" id="typeRadio" value="type"
                             onclick="displayForm(this);">
-                        <label class="form-check-label" for="flexRadioDefault2">
+                        <label class="form-check-label" for="typeRadio">
                             By Park Type
+                        </label>
+                    </div>
+                </div>
+                <div class="col col-sm-2">
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="searchRadio" id="allRadio" value="all"
+                            onclick="displayForm(this);">
+                        <label class="form-check-label" for="allRadio">
+                            ViewAll
                         </label>
                     </div>
                 </div>
@@ -70,6 +79,9 @@
             <div class="row mt-3">
                 <div class="col col-sm-3">
                     <div id="formContainer"></div>
+                </div>
+                <div class="col col-sm-12 mt-5">
+                    <div id="resultContainer"> </div>
                 </div>
 
             </div>
@@ -79,6 +91,8 @@
 
     <script type="text/javascript" src="scripts/locationData.js"></script>
     <script type="text/javascript" src="scripts/parkTypeData.js"></script>
+    <script type="text/javascript" src="scripts/nationalParkData.js"></script>
+
     <script type="text/javascript" src="scripts/park-search.js"></script>
 
 
