@@ -11,6 +11,15 @@
 body {
   background-color: rgb(246, 248, 249);
 }
+
+.custom-background {
+  background: url("../images/wallpapers.jpg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
 label {
   color: #545554;
 
@@ -25,10 +34,10 @@ legend {
 }
 
 .header-lable {
-  color: #545554;
+  color: #5b7f5b;
   /* margin-bottom: 1.5rem; */
   margin-top: 1.5rem;
-
+  font-weight: bolder;
   letter-spacing: 0.1px;
   font-size: 3rem;
   font-family: "Playfair Display", sans-serif;
