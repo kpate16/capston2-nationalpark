@@ -2,13 +2,15 @@ window.onload = init;
 function init() {
   //   var locationsArray = locationsArray;
   //   var parkTypesArray = parkTypesArray;
+  displayForm("view all");
+  parksearch();
 }
 
 function displayForm(formname) {
   var formContainer = document.getElementById("formContainer");
   formContainer.innerHTML = "";
 
-  if (formname.value === "location") {
+  if (formname === "location") {
     formContainer.innerHTML = "Locations";
 
     var selectList = document.createElement("select");
@@ -23,7 +25,7 @@ function displayForm(formname) {
       option.text = locationsArray[i];
       selectList.appendChild(option);
     }
-  } else if (formname.value === "type") {
+  } else if (formname === "type") {
     formContainer.innerHTML = "Park Types";
 
     var selectList = document.createElement("select");
@@ -42,7 +44,7 @@ function displayForm(formname) {
   var span = document.createElement("span");
   span.innerHTML =
     '<button id="searchPark" class="btn btn-primary mt-3"  onclick="parksearch()"> Search By ' +
-    formname.value +
+    formname +
     "</button>";
   formContainer.appendChild(span);
 }

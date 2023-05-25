@@ -6,10 +6,16 @@
 @import url(logo.css);
 @import url(card.css);
 @import url(navbar.css);
+@import url(bootstrap.min.css);
 /* ===================================== Basic CSS ==================================== */
 
 body {
   background-color: rgb(246, 248, 249);
+  background: url("../images/background.jpg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 
 .custom-background {

@@ -30,10 +30,10 @@
                                 <a class="nav-link active" href="home.html">Home</a>
                             </li>
                             <li class="nav-item ">
-                                <a class="nav-link" href="park-search.html">Park Search</a>
+                                <a class="nav-link active" href="park-search.html">Park Search</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="mountain-info.html">Mountain Information</a>
+                                <a class="nav-link active" href="mountain-info.html">Mountain Information</a>
                             </li>
                         </ul>
                     </div>
@@ -43,9 +43,47 @@
     </div>
     <div class="row">
         <div class="col col-md-12">
-            Mountain info
+            <div class="container">
+
+                <div class="header-lable">
+                    <h3> Mountain Search </h3>
+                </div>
+                <div class="transparant-card">
+                    <div class="row mt-0 ">
+
+                        <div class="col col-sm-12 mt-2">
+                            <label class="form-label" for="mountainSelect"> Select Mountain</label>
+                            <select id="mountainSelect" class="form-select">
+                            </select>
+                        </div>
+
+
+                    </div>
+                </div>
+                <div class="transparant-card">
+                    <div class="card mb-3">
+                        <div class="row g-0">
+                            <div class="col-md-4">
+                                <div id="imageContainer">
+
+                                </div>
+                            </div>
+                            <div class="col-md-8">
+                                <div class="card-body">
+                                    <div id="resultContainer">
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
+    <script type="text/javascript" src="scripts/mountainData.js"></script>
+
+    <script type="text/javascript" src="scripts/mountain-search.js"></script>
 </body>
 
 </html>
