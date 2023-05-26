@@ -15,7 +15,7 @@
 
     <div class="row">
         <div class="col col-md-12">
-            <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: rgb(140, 149, 99);">
+            <nav class="navbar navbar-expand-lg navbar-dark">
                 <div class="container-fluid">
                     <a class="navbar-brand fw-bold" href="#">National Park</a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -41,39 +41,31 @@
             </nav>
         </div>
     </div>
-    <div class="row">
-        <div class="col col-md-12">
-            <div class="container">
 
-                <div class="header-lable">
-                    <h3> Mountain Search </h3>
+    <div class="container-fluid">
+        <div class="transparant-card">
+            <div class="header-lable">
+                <h3> Mountain Search </h3>
+            </div>
+            <hr>
+            <div class="row mt-0 ">
+                <div class="col col-sm-12 mt-2">
+                    <label class="form-label" for="mountainSelect"> Select Mountain</label>
+                    <select id="mountainSelect" class="form-select">
+                    </select>
                 </div>
-                <div class="transparant-card">
-                    <div class="row mt-0 ">
-
-                        <div class="col col-sm-12 mt-2">
-                            <label class="form-label" for="mountainSelect"> Select Mountain</label>
-                            <select id="mountainSelect" class="form-select">
-                            </select>
+            </div>
+        </div>
+        <div class="transparant-card">
+            <div class="card mb-3">
+                <div class="row g-0">
+                    <div class="col-md-5">
+                        <div id="imageContainer">
                         </div>
-
-
                     </div>
-                </div>
-                <div class="transparant-card">
-                    <div class="card mb-3">
-                        <div class="row g-0">
-                            <div class="col-md-4">
-                                <div id="imageContainer">
-
-                                </div>
-                            </div>
-                            <div class="col-md-8">
-                                <div class="card-body">
-                                    <div id="resultContainer">
-
-                                    </div>
-                                </div>
+                    <div class="col-md-7">
+                        <div class="card-body">
+                            <div id="resultContainer">
                             </div>
                         </div>
                     </div>
@@ -81,8 +73,8 @@
             </div>
         </div>
     </div>
-    <script type="text/javascript" src="scripts/mountainData.js"></script>
 
+    <script type="text/javascript" src="scripts/mountainData.js"></script>
     <script type="text/javascript" src="scripts/mountain-search.js"></script>
 </body>
 

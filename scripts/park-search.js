@@ -69,7 +69,7 @@ function parksearch() {
 
   // Create the table header
   var thead = document.createElement("thead");
-  thead.classList.add("table-success");
+  thead.classList.add("table-primary");
   var headerRow = document.createElement("tr");
 
   var tableHeading = [
