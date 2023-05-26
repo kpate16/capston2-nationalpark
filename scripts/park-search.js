@@ -1,21 +1,20 @@
 window.onload = init;
 function init() {
-  //   var locationsArray = locationsArray;
-  //   var parkTypesArray = parkTypesArray;
   displayForm("view all");
   parksearch();
 }
-
+//------------------------ Display form ---------------------------
 function displayForm(formname) {
   var formContainer = document.getElementById("formContainer");
   formContainer.innerHTML = "";
 
+  //create select element
+  var selectList = document.createElement("select");
+  selectList.id = "locationSelect";
+  selectList.className = "form-select ";
+
   if (formname === "location") {
     formContainer.innerHTML = "Locations";
-
-    var selectList = document.createElement("select");
-    selectList.id = "locationSelect";
-    selectList.className = "form-select ";
     formContainer.appendChild(selectList);
 
     // locationsArray refers from imported file(LocationData.js) in html
@@ -27,10 +26,6 @@ function displayForm(formname) {
     }
   } else if (formname === "type") {
     formContainer.innerHTML = "Park Types";
-
-    var selectList = document.createElement("select");
-    selectList.id = "locationSelect";
-    selectList.className = "form-select ";
     formContainer.appendChild(selectList);
 
     for (var i = 0; i < parkTypesArray.length; i++) {
@@ -40,13 +35,6 @@ function displayForm(formname) {
       selectList.appendChild(option);
     }
   }
-
-  var span = document.createElement("span");
-  span.innerHTML =
-    '<button id="searchPark" class="btn btn-primary mt-3"  onclick="parksearch()"> Search By ' +
-    formname +
-    "</button>";
-  formContainer.appendChild(span);
 }
 
 //------------------------ parksearch---------------------------
@@ -98,7 +86,7 @@ function parksearch() {
   if (locationRadio) {
     //if radio selected is location then filter on state
     var filteredData = nationalParksArray.filter(function (obj) {
-      return obj.State === searchValue;
+      return obj.State.toLocaleUpperCase() === searchValue.toLocaleUpperCase();
     });
   } else if (typeRadio) {
     //if radio selected is type then filter on location name

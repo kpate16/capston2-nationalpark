@@ -30,42 +30,45 @@ function showMountainData(e) {
   //   var filteredData = mountainsArray.filter(function (obj) {
   //     return obj.name === selectedValue;
   //   });
-  var result = mountainsArray.find((o) => o.name === selectedValue);
+  var filteredObj = mountainsArray.find((o) => o.name === selectedValue);
 
-  if (result) {
+  if (filteredObj) {
     getSunsetForMountain().then((data) => {
       sunsetResponse = data.results;
       var elem = document.createElement("img");
-      elem.setAttribute("src", "../images/" + result.img);
+      elem.setAttribute("src", "../images/" + filteredObj.img);
       elem.style.width = "90%";
-      // elem.setAttribute("height", 300);
-      // elem.setAttribute("width", 200);
+
       imageContainer.appendChild(elem);
 
       var span = document.createElement("span");
       span.innerHTML =
         "<div class='row card-title h4'>  <div class='col col-sm-4 '>Mountain Name :   </div>  <div class='col  text-warning'>   " +
-        result.name +
+        filteredObj.name +
         "</div></div>";
       resultContainer.appendChild(span);
+
       var span = document.createElement("span");
       span.innerHTML =
         "<div class='row '>  <div class='col col-sm-4 card-title h6'>Mountain Description :   </div>  <div class='col col-sm-8 h5 p-2 text-secondary'>   " +
-        result.desc +
+        filteredObj.desc +
         "</div></div>";
       resultContainer.appendChild(span);
+
       var span = document.createElement("span");
       span.innerHTML =
         "<div class='row '>  <div class='col col-sm-4 card-title h6'>Mountain Elevation  : </div>  <div class='col col-sm-8 h5 p-2 text-secondary'>    " +
-        result.elevation +
+        filteredObj.elevation +
         "</div></div>";
       resultContainer.appendChild(span);
+
       var span = document.createElement("span");
       span.innerHTML =
         "<div class='row '>  <div class='col col-sm-4 card-title h6'>Sunrise Time  : </div>  <div class='col col-sm-8 h5 p-2 text-success'>    " +
         sunsetResponse.sunrise +
         "</div></div>";
       resultContainer.appendChild(span);
+
       var span = document.createElement("span");
       span.innerHTML =
         "<div class='row '>  <div class='col col-sm-4 card-title h6'>Sunset Time  : </div>  <div class='col col-sm-8 h5 p-2 text-success'>    " +
