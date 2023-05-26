@@ -19,22 +19,25 @@ https://github.com/kpate16/capston2-nationalpark
 
 Home Page:
 
-![image](https://github.com/kpate16/capston2-nationalpark/assets/130574523/b011f620-eb30-42f7-874b-cf4f25549f15)
+![image](https://github.com/kpate16/capston2-nationalpark/assets/130574523/989c423c-495b-40fc-b9a1-0dd7b6efc21f)
+
 
 After click on Find National Parks button(By Location):
+![image](https://github.com/kpate16/capston2-nationalpark/assets/130574523/367f2bc4-dc06-4f00-874c-1d92247308da)
 
-![image](https://github.com/kpate16/capston2-nationalpark/assets/130574523/db549491-e991-4ceb-b158-791f5c5b675b)
 
 Selected By Park Type:
 
-![image](https://github.com/kpate16/capston2-nationalpark/assets/130574523/c078b372-338c-426d-bf57-0dd034035fff)
+![image](https://github.com/kpate16/capston2-nationalpark/assets/130574523/3260a76a-672c-43ec-bdd0-444e3d556ca2)
 
 Selected View All:
 
-![image](https://github.com/kpate16/capston2-nationalpark/assets/130574523/fdea9f7f-eecd-468a-a0a2-d8b84e813621)
+![image](https://github.com/kpate16/capston2-nationalpark/assets/130574523/799b9fd8-5194-48f6-95eb-f3bd12347049)
+
 
 Mountain Information Page: Select any one from dropdown
 
-![image](https://github.com/kpate16/capston2-nationalpark/assets/130574523/d108e908-d0c8-40c1-a570-1b2832f70e9f)
+![image](https://github.com/kpate16/capston2-nationalpark/assets/130574523/efdc1410-3a79-43f1-ae55-9fd71f12d2c8)
 
-![image](https://github.com/kpate16/capston2-nationalpark/assets/130574523/201dc271-61f1-4099-8206-e278dcc285e0)
+
+![image](https://github.com/kpate16/capston2-nationalpark/assets/130574523/6416edfe-33db-4384-b419-df3945040d69)
